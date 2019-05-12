@@ -57,23 +57,20 @@ class App extends Component {
   render() {
     return (
       <div className='container-fluid'>
-        <h2 className='jumbotron'>Change calculator !</h2>
+        <h2 className='jumbotron'>Change calculator </h2>
         <hr />
         <div className='row'>
           <div className='col-sm-4' style={ { backgroundColor: 'lavender' } }>
             <div>Enter information.</div>
-            <div> Received $</div>
+            <div> How much is received ?</div>
             <input onChange={ this.handleReceived } />
-            <div>Change $ Due</div>
+            <div>How much is due ?</div>
             <input onChange={ this.handleDue } />
             <hr />
             <button onClick={ this.handleCalculate }>Calculate</button>
           </div>
           <div className='col-sm-8' style={ { backgroundColor: 'lavenderblush', alignContent: 'center' } }>
-            <div>Enter information.</div>
             <hr />
-            <div> Received $</div>
-            <div>Change $ Due</div>
             <h4>Total: { this.state.total }</h4>
             <h5>Twenties: { this.state.twenties }</h5>
             <h5>Tens: { this.state.tens }</h5>
